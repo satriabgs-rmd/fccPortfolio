@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #5abce0;
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+    background-color: rgba(163, 163, 163, 0.4);
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(154, 155, 202, 0.4);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: rgb(192, 208, 238);
+}
+
+.navbar ul li {
+    padding-right: 30px;
+}
+
+#welcome-section {
+    background: linear-gradient(to bottom, #cde2e9, #fff);
+    height: 100vh;
+    color: rgb(32, 32, 32);
+    overflow: hidden;
+    position: relative;
+}
+
+.trans1 {
+    width: 700px;
+    height: 700px;
+    top: -180px;
+    left: -200px;
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(-30px, 0);
+    position: absolute;
+    z-index: 1;
+}
+
+.trans2 {
+    width: 350px;
+    height: 350px;
+    top: -30px;
+    right: 300px;
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(0, -50px);
+    position: absolute;
+    z-index: 2;
+}
+
+.trans3 {
+    width: 700px;
+    height: 700px;
+    top: 80px;
+    right: -250px;
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(30px, 0);
+    position: absolute;
+    z-index: 1;
+}
+
+.trans4 {
+    width: 300px;
+    height: 300px;
+    top: 400px;
+    left: 100px;
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(0, 50px);
+    position: absolute;
+    z-index: 2;
+}
+
+.trans1.pmuncul, .trans2.pmuncul,
+.trans3.pmuncul, .trans4.pmuncul {
+    opacity: 0.3;
+    transform: translate(0, 0);
+}
+
+.line-bawah {
+    background: linear-gradient(to bottom, #b4d4ff, #fff);
+    position: absolute;
+    transform: translate(0, 50px);
+    transition: 3s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.line-atas {
+    background: #fff;
+    position: absolute;
+    transform: translate(0, -50px);
+    transition: 3s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.line-bawah.pmuncul, .line-atas.pmuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.line1 {
+    top: 200px;
+    left: 300px;
+    width: 3px;
+    height: 600px;
+    z-index: 3;
+}
+
+.line2 {
+    top: 300px;
+    right: 550px;
+    width: 3px;
+    height: 400px;
+}
+
+.line3 {
+    top: 100px;
+    right: 250px;
+    width: 3px;
+    height: 600px;
+    z-index: 3;
+}
+
+.line4 {
+    top: -10px;
+    left: 580px;
+    width: 3px;
+    height: 450px;
+}
+
+.line5 {
+    top: -10px;
+    left: 140px;
+    width: 3px;
+    height: 250px;
+    z-index: 3;
+}
+
+.jumbotron .profil {
+    margin-top: 70px;
+    max-width: 180px;
+    transform: translate(0, 60px);
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 6;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    transform: translate(0, 60px);
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 6;
+}
+
+.jumbotron h1 {
+    text-shadow: 1px 1px 2px black;
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+.jumbotron p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.jumbotron #profile-link {
+    text-align: center;
+    background-color: rgb(136, 136, 136);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transform: translate(60px, 0);
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 2;
+}
+
+.jumbotron #profile-link:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.jumbotron i {
+    margin-right: 5px;
+}
+
+.jumbotron .profil.pmuncul,
+.jumbotron h1.pmuncul,
+.jumbotron #profile-link.pmuncul,
+.jumbotron p.pmuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.about {
+    background: linear-gradient(to top, #e3cde9, #fff);
+}
+
+hr {
+    width: 150px;
+    border-top: 2px solid rgb(92, 92, 92);
+    margin: 1px auto;
+}
+
+.hr1 {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.hr1.show {
+    opacity: 1;
+}
+
+section {
+    min-height: 600px;
+}
+
+.about h2 {
+    margin-top: 160px;
+}
+
+.about h2 {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 0.7s;
+}
+
+.about h2.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.left,
+.right {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 0.7s;
+    margin-top: 50px;
+}
+
+.right {
+    transform: translate(50px, 0);
+}
+
+.left.show,
+.right.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio {
+    background: linear-gradient(to bottom, #e3cde9, #fff);
+    padding-top: 60px;
+}
+
+.asek {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio .img {
+    margin-bottom: -20px;
+    max-width: 400px;
+    height: 300px;
+    text-align: center;
+    border-radius: 4px;
+    justify-content: center;
+    background-size: cover;
+    opacity: 0;
+    transform: translate(0, -30px);
+    transition: 0.7s;
+}
+
+.portfolio .img.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.thumbnail .img-project {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio h2 {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 0.7s;
+}
+
+.portfolio h2.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.lay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+}
+
+.overlay {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    width: 89%;
+    height: 61%;
+    opacity: 0;
+    transition: 0.7s ease;
+    background: rgba(99, 99, 99, 0.8);
+    overflow: hidden;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+
+.contact {
+    margin-top: 200px;
+    min-height: 800px;
+    background: linear-gradient(to top, #cde2e9, #fff);
+}
+
+form {
+    margin-top: 60px;
+}
+
+.comment {
+    width: 50%;
+	padding: 10px 0;
+	margin: 20px auto;
+    display: block;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent; 
+    color: rgb(49, 49, 49);
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 0.7s;
+}
+
+.comment.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact h2, .tombol {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 0.7s;
+}
+
+.contact h2.show, .tombol.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.no-comment {
+    width: 50%;
+    height: 100px;
+	padding: 10px 10px;
+	margin: 50px auto;
+	outline: none;
+    display: block;
+	background: transparent; 
+    color: rgb(49, 49, 49);
+    transition: 0.25s;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 0.7s;
+}
+
+.no-comment.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.tombol {
+    border: 0;
+    width: 90px;
+    background-color: #54d15a;
+    display: block;
+    margin: 20px auto;
+    padding: 6px 8px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: #74e988;
+}
+
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, #cde2e9, #fff);
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+footer p {
+    color: rgb(63, 63, 63);
+    font-size: 1em;
+}
+
+#icon {
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+#icon a {
+    color: rgb(46, 46, 46); 
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+#icon a .fa {
+    line-height: 35px;
+}
+
+#icon a:hover {
+    background-color: #666666;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    .portfolio .img {
+        margin: 10px auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 68%;
+        opacity: 0;
+        transition: 0.3s ease;
+        background: rgba(122, 122, 122, 0.7);
+    }
+
+    #profile-link {
+        z-index: 10;
+        position: relative;
+    }
+
+    .line-bawah {
+        margin-top: 700px;
+    }
+
+    .line-atas {
+        margin-top: -300px;
+    }
+
+    .trans4, .trans3 {
+        margin-top: 700px;
+    }
+
+    .trans1, .trans2 {
+        margin-top: -400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .jumbotron .profil {
+        max-width: 140px;
+    }
+
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+
+    .line-bawah {
+        margin-top: 700px;
+    }
+
+    .line-atas {
+        margin-top: -500px;
+    }
+
+    .trans4, .trans3 {
+        margin-top: 700px;
+    }
+
+    .trans1, .trans2 {
+        margin-top: -400px;
+    }
+}
