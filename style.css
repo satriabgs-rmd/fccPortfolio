@@ -51,7 +51,7 @@ body {
     top: -180px;
     left: -200px;
     opacity: 0;
-    transition: 0.8s;
+    transition: 3s;
     transform: translate(-30px, 0);
     position: absolute;
     z-index: 1;
@@ -63,7 +63,7 @@ body {
     top: -30px;
     right: 300px;
     opacity: 0;
-    transition: 0.8s;
+    transition: 3s;
     transform: translate(0, -50px);
     position: absolute;
     z-index: 2;
@@ -75,7 +75,7 @@ body {
     top: 80px;
     right: -250px;
     opacity: 0;
-    transition: 0.8s;
+    transition: 3s;
     transform: translate(30px, 0);
     position: absolute;
     z-index: 1;
@@ -87,7 +87,7 @@ body {
     top: 400px;
     left: 100px;
     opacity: 0;
-    transition: 0.8s;
+    transition: 3s;
     transform: translate(0, 50px);
     position: absolute;
     z-index: 2;
@@ -158,6 +158,10 @@ body {
     width: 3px;
     height: 250px;
     z-index: 3;
+}
+
+#welcome-section {
+    height: 100vh;
 }
 
 .jumbotron .profil {
@@ -472,6 +476,10 @@ footer p {
 }
 
 @media (max-width: 576px) {
+    .jumbotron {
+        height: 100vh;
+    }
+
     body {
         width: 100%;
     }
@@ -499,7 +507,7 @@ footer p {
     }
 
     .line-bawah {
-        margin-top: 700px;
+        margin-top: 800px;
     }
 
     .line-atas {
@@ -507,7 +515,7 @@ footer p {
     }
 
     .trans4, .trans3 {
-        margin-top: 700px;
+        margin-top: 800px;
     }
 
     .trans1, .trans2 {
@@ -516,16 +524,23 @@ footer p {
 }
 
 @media (max-width: 1024px) {
+    .jumbotron {
+        padding-top: 200px;
+    }
     .jumbotron .profil {
-        max-width: 140px;
+        max-width: 200px;
     }
 
     .jumbotron h1 {
-        font-size: 35px;
+        font-size: 45px;
+    }
+
+    .jumbotron p {
+        font-size: 25px;
     }
 
     .line-bawah {
-        margin-top: 700px;
+        margin-top: 150vh;
     }
 
     .line-atas {
@@ -533,10 +548,35 @@ footer p {
     }
 
     .trans4, .trans3 {
-        margin-top: 700px;
+        margin-top: 150vh;
     }
 
     .trans1, .trans2 {
         margin-top: -400px;
+    }
+
+    .portfolio {
+        margin-top: -2px;
+    }
+
+    .portfolio .img {
+        margin: -10px auto;
+    }
+
+    footer {
+        margin-top: -2px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 68.5%;
+        opacity: 0;
+        transition: 0.3s ease;
+        background: rgba(122, 122, 122, 0.7);
     }
 }
