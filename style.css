@@ -55,6 +55,7 @@ body {
     transform: translate(-30px, 0);
     position: absolute;
     z-index: 1;
+    filter: blur(8px);
 }
 
 .trans2 {
@@ -67,6 +68,7 @@ body {
     transform: translate(0, -50px);
     position: absolute;
     z-index: 2;
+    filter: blur(8px);
 }
 
 .trans3 {
@@ -79,6 +81,7 @@ body {
     transform: translate(30px, 0);
     position: absolute;
     z-index: 1;
+    filter: blur(8px);
 }
 
 .trans4 {
@@ -91,11 +94,12 @@ body {
     transform: translate(0, 50px);
     position: absolute;
     z-index: 2;
+    filter: blur(8px);
 }
 
 .trans1.pmuncul, .trans2.pmuncul,
 .trans3.pmuncul, .trans4.pmuncul {
-    opacity: 0.3;
+    opacity: 0.4;
     transform: translate(0, 0);
 }
 
@@ -524,19 +528,16 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-    .jumbotron {
-        padding-top: 200px;
-    }
     .jumbotron .profil {
-        max-width: 200px;
+        max-width: 150px;
     }
 
     .jumbotron h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .jumbotron p {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .line-bawah {
@@ -578,5 +579,9 @@ footer p {
         opacity: 0;
         transition: 0.3s ease;
         background: rgba(122, 122, 122, 0.7);
+    }
+
+    .left, .right {
+        text-align: center;
     }
 }
